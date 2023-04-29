@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name="t_depo")
+@Table(name="t_depo_envanter")
 @Getter @Setter @NoArgsConstructor 
 public class DepoEnvanter {
 	

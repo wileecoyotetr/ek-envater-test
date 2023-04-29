@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name="t_envanter")
+@Table(name="t_envater_giris")
 @Getter @Setter @NoArgsConstructor 
 public class EnvanterGiris {
 	

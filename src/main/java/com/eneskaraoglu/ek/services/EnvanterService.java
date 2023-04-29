@@ -1,4 +1,4 @@
-package com.eneskaraoglu.ek.dao;
+package com.eneskaraoglu.ek.services;
 
 import java.util.List;
 
@@ -11,8 +11,8 @@ import com.eneskaraoglu.ek.entity.EnvanterLog;
 import com.eneskaraoglu.ek.entity.Katalog;
 import com.eneskaraoglu.ek.entity.KatalogEnvanter;
 
-public interface EnvanterDAO {
-	
+public interface EnvanterService {
+
 	List<Depo> findAllDepo();
 	List<DepoEnvanter> findAllDepoEnvanter();
 	List<Envanter> findAllEnvanter();

@@ -1,7 +1,5 @@
 package com.eneskaraoglu.ek.dao;
 
-import java.util.List;
-
 import com.eneskaraoglu.ek.entity.Depo;
 import com.eneskaraoglu.ek.entity.DepoEnvanter;
 import com.eneskaraoglu.ek.entity.Envanter;
@@ -11,16 +9,7 @@ import com.eneskaraoglu.ek.entity.EnvanterLog;
 import com.eneskaraoglu.ek.entity.Katalog;
 import com.eneskaraoglu.ek.entity.KatalogEnvanter;
 
-public interface EnvanterDAO {
-	
-	List<Depo> findAllDepo();
-	List<DepoEnvanter> findAllDepoEnvanter();
-	List<Envanter> findAllEnvanter();
-	List<EnvanterGiris> findAllEnvanterGiris();
-	List<EnvanterCikis> findAllEnvanterCikis();
-	List<EnvanterLog> findAllEnvanterLog();
-	List<Katalog> findAllKatalog();
-	List<KatalogEnvanter> findAllKatalogEnvanter();
+public interface EnvanterIDDAO {
 	
 	Depo findByIDDepo(int theId);
 	DepoEnvanter findByIDDepoEnvanter(int theId);

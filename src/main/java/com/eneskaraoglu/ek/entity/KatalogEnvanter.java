@@ -13,34 +13,20 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name="t_katalog_urun")
+@Table(name="t_katalog_envanter")
 @Getter @Setter @NoArgsConstructor 
-public class KatalogUrun {
+public class KatalogEnvanter {
 	
 	 @Id
 	 @GeneratedValue(strategy = GenerationType.IDENTITY)
-	 @Column(name="katalog_urun_id")
-	 private int katalog_urun_id;
+	 @Column(name="katalog_envanter_id")
+	 private int katalog_envanter_id;
 	 
 	@Column(name="katalog_id")
 	private int katalog_id;
 	
-	@Column(name="urun_id")
-	private int urun_id;
-
-	@Override
-	public String toString() {
-		return "katalogUrun [katalog_urun_id=" + katalog_urun_id + ", katalog_id=" + katalog_id + ", urun_id=" + urun_id
-				+ "]";
-	}
-
-	public KatalogUrun(int katalog_urun_id, int katalog_id, int urun_id) {
-		super();
-		this.katalog_urun_id = katalog_urun_id;
-		this.katalog_id = katalog_id;
-		this.urun_id = urun_id;
-	}
-	
+	@Column(name="envanter_id")
+	private int envanter_id;
 
 	
 }
