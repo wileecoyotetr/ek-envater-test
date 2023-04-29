@@ -2,8 +2,8 @@ package com.eneskaraoglu.ek.dao;
 
 import java.util.List;
 
-import com.eneskaraoglu.ek.entity.Urun;
+import com.eneskaraoglu.ek.entity.Envanter;
 
 public interface EnvanterDAO {
-	List<Urun> findAll();
+	List<Envanter> findAll();
 }

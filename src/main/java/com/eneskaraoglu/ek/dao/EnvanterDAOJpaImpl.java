@@ -5,26 +5,26 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.eneskaraoglu.ek.entity.Urun;
+import com.eneskaraoglu.ek.entity.Envanter;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.TypedQuery;
 
 @Repository
-public class EnvanterDaoJpaImpl implements EnvanterDAO {
+public class EnvanterDAOJpaImpl implements EnvanterDAO {
 
 	private EntityManager entityManager;
 	
 	@Autowired
-	public EnvanterDaoJpaImpl (EntityManager theEntityManager) {
+	public EnvanterDAOJpaImpl (EntityManager theEntityManager) {
 		entityManager = theEntityManager;
 	}
 	
 	@Override
-	public List<Urun> findAll() {
+	public List<Envanter> findAll() {
 
-		TypedQuery<Urun> theQuery = entityManager.createQuery(" from Urun", Urun.class);
-		List<Urun> urunler = theQuery.getResultList();
+		TypedQuery<Envanter> theQuery = entityManager.createQuery(" from Urun", Envanter.class);
+		List<Envanter> urunler = theQuery.getResultList();
 		return urunler;
 	}
 
