@@ -18,29 +18,29 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.TypedQuery;
 
 @Repository
-public class EnvanterDAOJpaImpl implements EnvanterDAO {
+public class EnvanterLogDAOjpaImpl implements EnvanterLogDAO {
 
 	private EntityManager entityManager;
 	
 	@Autowired
-	public EnvanterDAOJpaImpl (EntityManager theEntityManager) {
+	public EnvanterLogDAOjpaImpl (EntityManager theEntityManager) {
 		entityManager = theEntityManager;
 	}
 
 	@Override
-	public List<Envanter> findAll() {
-		TypedQuery<Envanter> theQuery = entityManager.createQuery(" from Envanter", Envanter.class);
-		List<Envanter> urunler = theQuery.getResultList();
-		return urunler;
-	}
-
-	@Override
-	public Envanter findByID(int theId) {
-		Envanter result = entityManager.find(Envanter.class,theId );
+	public List<EnvanterLog> findAll() {
+		TypedQuery<EnvanterLog> theQuery = entityManager.createQuery(" from EnvanterLog", EnvanterLog.class);
+		List<EnvanterLog> result = theQuery.getResultList();
 		return result;
 	}
 
+	@Override
+	public EnvanterLog findByID(int theId) {
+		EnvanterLog result = entityManager.find(EnvanterLog.class,theId );
+		return result;
+	}
 
+	
 
 
 }

@@ -11,9 +11,11 @@ import com.eneskaraoglu.ek.entity.EnvanterLog;
 import com.eneskaraoglu.ek.entity.Katalog;
 import com.eneskaraoglu.ek.entity.KatalogEnvanter;
 
-public interface EnvanterService {
+public interface DepoService {
 
+	List<Depo> findAll();
+	Depo findByID(int theId);
+	Depo save(Depo theEntity);
+	void deleteByID(int theId);
 
-	List<Envanter> findAll();
-	Envanter findByID(int theId);
 }

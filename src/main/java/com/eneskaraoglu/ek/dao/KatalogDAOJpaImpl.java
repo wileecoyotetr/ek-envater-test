@@ -29,4 +29,10 @@ public class KatalogDAOJpaImpl implements KatalogDAO {
 		return kataloglar;
 	}
 
+	@Override
+	public Katalog findByID(int theId) {
+		Katalog result = entityManager.find(Katalog.class,theId );
+		return result;
+	}
+
 }

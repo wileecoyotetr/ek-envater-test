@@ -1,4 +1,4 @@
-package com.eneskaraoglu.ek.services;
+package com.eneskaraoglu.ek.dao;
 
 import java.util.List;
 
@@ -11,9 +11,10 @@ import com.eneskaraoglu.ek.entity.EnvanterLog;
 import com.eneskaraoglu.ek.entity.Katalog;
 import com.eneskaraoglu.ek.entity.KatalogEnvanter;
 
-public interface EnvanterService {
-
-
-	List<Envanter> findAll();
-	Envanter findByID(int theId);
+public interface DepoDAO {
+	
+	List<Depo> findAll();
+	Depo findByID(int theId);
+	Depo save(Depo theEntity);
+	void deleteByID(int theId);
 }

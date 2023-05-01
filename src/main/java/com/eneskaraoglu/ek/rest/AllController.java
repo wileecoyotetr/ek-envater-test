@@ -6,11 +6,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.eneskaraoglu.ek.dao.EnvanterDAO;
+import com.eneskaraoglu.ek.dao.AllDAO;
 import com.eneskaraoglu.ek.dao.KatalogDAO;
 import com.eneskaraoglu.ek.entity.Katalog;
 import com.eneskaraoglu.ek.entity.KatalogEnvanter;
-import com.eneskaraoglu.ek.services.EnvanterService;
+import com.eneskaraoglu.ek.services.AllService;
 import com.eneskaraoglu.ek.entity.Depo;
 import com.eneskaraoglu.ek.entity.DepoEnvanter;
 import com.eneskaraoglu.ek.entity.Envanter;
@@ -20,11 +20,11 @@ import com.eneskaraoglu.ek.entity.EnvanterLog;
 
 @RestController
 @RequestMapping("/api")
-public class EnvanterAllController {
+public class AllController {
 	
-	private EnvanterService envanterService;
+	private AllService envanterService;
 	
-	public EnvanterAllController(EnvanterService theEnvanterService) {
+	public AllController(AllService theEnvanterService) {
 		envanterService = theEnvanterService;
 	}
 	

@@ -12,6 +12,8 @@ import com.eneskaraoglu.ek.dao.EnvanterCikisDAO;
 import com.eneskaraoglu.ek.dao.EnvanterDAO;
 import com.eneskaraoglu.ek.dao.EnvanterGirisDAO;
 import com.eneskaraoglu.ek.dao.EnvanterLogDAO;
+import com.eneskaraoglu.ek.dao.KatalogDAO;
+import com.eneskaraoglu.ek.dao.KatalogEnvanterDAO;
 import com.eneskaraoglu.ek.entity.Depo;
 import com.eneskaraoglu.ek.entity.DepoEnvanter;
 import com.eneskaraoglu.ek.entity.Envanter;
@@ -22,22 +24,22 @@ import com.eneskaraoglu.ek.entity.Katalog;
 import com.eneskaraoglu.ek.entity.KatalogEnvanter;
 
 @Service
-public class EnvanterServiceImpl implements EnvanterService {
+public class KatalogServiceImpl implements KatalogService {
 	
-	private EnvanterDAO dao;
+	private KatalogDAO dao;
 	
 	@Autowired
-	public EnvanterServiceImpl(EnvanterDAO theDAO) {
+	public KatalogServiceImpl(KatalogDAO theDAO) {
 		dao = theDAO;
 	}
 
 	@Override
-	public List<Envanter> findAll() {
+	public List<Katalog> findAll() {
 		return dao.findAll();
 	}
 
 	@Override
-	public Envanter findByID(int theId) {
+	public Katalog findByID(int theId) {
 		return dao.findByID(theId);
 	}
 	

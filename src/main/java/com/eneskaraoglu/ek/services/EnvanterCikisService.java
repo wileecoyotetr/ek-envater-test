@@ -11,9 +11,9 @@ import com.eneskaraoglu.ek.entity.EnvanterLog;
 import com.eneskaraoglu.ek.entity.Katalog;
 import com.eneskaraoglu.ek.entity.KatalogEnvanter;
 
-public interface EnvanterService {
+public interface EnvanterCikisService {
 
-
-	List<Envanter> findAll();
-	Envanter findByID(int theId);
+	List<EnvanterCikis> findAll();
+	EnvanterCikis findByID(int theId);
+	
 }
